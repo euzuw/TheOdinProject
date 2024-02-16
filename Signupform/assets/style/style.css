@@ -1,0 +1,63 @@
+* {
+   margin: 0;
+   padding: 0; 
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.signup {
+    width: 100%;
+    height: 100%;   
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.fn {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+
+.fni {
+    font-size: 16px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+}
+
+.lni {
+    font-size: 16px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+}
+
+.emi {
+    font-size: 16px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+}
+
+.pwi {
+    font-size: 16px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+}
+
+.submit {
+    height: 50px;
+    width: 100px;
+}
