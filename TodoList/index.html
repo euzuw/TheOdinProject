@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
-    <script src="./script.js"></script>
+    <script src="./scriptlogin.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylelogin.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do List</title>
+    <title>Login Page</title>
 </head>
 <body>
     <div class="container">
-        <button id="showBtn" onclick="showForm()">Create List</button>
-
-        <div id="show" class="newForm">
-            <form>
-                <input type="text" id="title" placeholder="Title">
-                <input type="checkbox" id="done" placeholder="Done?">
-                <button type="button" class="submitBtn" onclick="addTodo()">Submit</button>
-            </form>
+        <div class="buttons">
+            <p class="First">Username</p>
+            <input class="text" name="User" id="user" placeholder="Username">
+            <p class="Second">Password</p>
+            <input class="text" name="Password" id="password" placeholder="Password">
+            <button class="submit" id="submit">Submit</button>
+            <button class="signup" onclick="redirectSignup()">Sign Up</button>
         </div>
     </div>
+
+   
 </body>
 </html>

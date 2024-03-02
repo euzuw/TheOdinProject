@@ -29,30 +29,30 @@ function showForm() {
 function render() {
     const listContainer = document.getElementById("container");
     listContainer.innerHTML = '';
-    newToDo.forEach((list, index) => {
+    newToDo.forEach((list, main) => {
         const listDiv = document.createElement('div');
         listDiv.classList.add('book');
         listDiv.innerHTML = `
         <p>${list.title}</p>
         <p>Done: ${list.done ? 'Yes' : 'No'}</p>
-        <button onclick="removeList(${index})">Remove</button>
-        <button onclick="toggleDone(${index})">Toggle Done</button>
-        <button id="toggleButton-${index}" onclick="toggleDone(${index})">${newToDo[index].done ? 'Toggle Undone' : 'Toggle Done'}</button>
+        <button onclick="removeList(${main})">Remove</button>
+        <button onclick="toggleDone(${main})">Toggle Done</button>
+        <button id="toggleButton-${main}" onclick="toggleDone(${main})">${newToDo[main].done ? 'Toggle Undone' : 'Toggle Done'}</button>
         `;
         listContainer.appendChild(listDiv);
     });
 }
 
-function removeList(index) {
-    newToDo.splice(index, 1);
+function removeList(main) {
+    newToDo.splice(main, 1);
     render();
 }
 
-function toggleDone(index) {
-    newToDo[index].done = !newToDo[index].done;
+function toggleDone(main) {
+    newToDo[main].done = !newToDo[main].done;
     render();
-    const doneButton = document.getElementById(`toggleButton-${index}`);
-    doneButton.textContent = newToDo[index].done ? 'Toggle Undone' : 'Toggle Done';
+    const doneButton = document.getElementById(`toggleButton-${main}`);
+    doneButton.textContent = newToDo[main].done ? 'Toggle Undone' : 'Toggle Done';
 }
 
 document.getElementById('showBtn').addEventListener('click', () => {
