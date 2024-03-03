@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="./stylesignup.css">
     <script src="./scriptlogin.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-        <h1>TEST</h1>
-        <button class="back" onclick="backtologin()">Back to Login Page</button>
+    <div class="container">
+      <div class="box"></div>
+        <div class="buttons">
+            <p class="First">Username</p>
+            <input class="text" name="User" id="user" placeholder="Username">
+            <p class="email">Email</p>
+            <input type="text" class="mail" id="mail" placeholder="Email">
+            <p class="Second">Password</p>
+            <input class="text" name="Password" id="password" placeholder="Password">
+            <p class="retype">Re-type your password</p>
+            <input class="text" name="repassword" id="repassword" placeholder="Password">
+            <button class="submit" id="submit">Submit</button>
+            <button class="signup" onclick="redirectSignup()">Sign Up</button>
+            <p>Already have an account?</p>
+            <button class="back" onclick="backtologin()">Back to Login Page</button>
+        </div>
+    </div>
 </body>
 </html>
